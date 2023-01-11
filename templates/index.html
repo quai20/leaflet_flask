@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> FLASK TEST </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta charset="utf-8">
+    <script src="{{url_for('static', filename='jquery-2.2.4.min.js')}}"></script>
+    <script src="{{url_for('static', filename='leaflet/leaflet.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='leaflet/leaflet.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='app.css')}}">
+
+</head>
+
+<body>
+
+    <b>FLASK & LEAFLET TEST</b>
+    <br><br>    
+    <div id="lmap"></div>    
+    <button id="pointButton" onclick="dosomething();">Try Me</button>        
+    <div id="toFill">.</div>
+
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+</body>
+
+</html>
